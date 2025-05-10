@@ -19,6 +19,6 @@ export default defineConfig({
     }
   },
   server: {
-    open: "[*project*]"
+    open: "carcassonne-visualiser"
   }
 })

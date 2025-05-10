@@ -1,8 +1,8 @@
 {
-  "name": "[*project*]",
+  "name": "carcassonne-visualiser",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://hugojjohnson.github.io/[*project*]",
+  "homepage": "https://hugojjohnson.github.io/carcassonne-visualiser",
   "type": "module",
   "scripts": {
     "start": "vite",

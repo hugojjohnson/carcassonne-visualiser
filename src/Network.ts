@@ -3,7 +3,7 @@ import { RequestResponse } from "./Interfaces";
 
 
 // export const baseURL =;
-export const baseURL = import.meta.env.DEV ? "http://localhost:3001/[*project*]/" : "https://44.220.164.141.nip.io/[*project*]/"
+export const baseURL = import.meta.env.DEV ? "http://localhost:3001/carcassonne-visualiser/" : "https://44.220.164.141.nip.io/carcassonne-visualiser/"
 
 const apiClient = axios.create({
     baseURL: baseURL,
