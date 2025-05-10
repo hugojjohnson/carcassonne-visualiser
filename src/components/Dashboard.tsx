@@ -3,14 +3,18 @@ import { CarcassonneVisualizer } from "./CarcassonneVisualiser";
 import { PlacedTile } from "./Interfaces";
 import { findValidMoves } from "./MoveGenerator";
 
+/**
+ * A wrapper page that combines the game generator and visualiser.
+ */
 export default function Dashboard(): React.ReactElement {
     const [placedTiles, setPlacedTiles] = useState<PlacedTile[]>([]);
 
     useEffect(() => {
+        // Manually place the first tile
         const simulation: PlacedTile[] = [
             { img_name: "1.png", x: 0, y: 0 }
         ];
-
+        // Get a list of the valid moves and add a random (valid) move to the board, and then repeat the process.
         for (let i = 0; i < 99; i++) {
             const possibleMoves = findValidMoves(simulation);
             if (possibleMoves.length === 0) {
@@ -19,7 +23,6 @@ export default function Dashboard(): React.ReactElement {
             }
             const move = possibleMoves[Math.floor(Math.random() * possibleMoves.length)];
             simulation.push(move);
-            // console.log(`Turn ${i + 1}: Placed ${move.img_name} at (${move.x}, ${move.y})`);
         }
         console.log(simulation)
         setPlacedTiles(simulation);

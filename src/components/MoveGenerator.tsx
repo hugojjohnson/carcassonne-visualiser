@@ -2,6 +2,10 @@ import { PlacedTile } from "./Interfaces";
 import { TileInfo } from "./TileInfo";
 
 
+/**
+ * Logic to generate a sample map for the visualiser.
+ * Most likely if we use it for the real bot battle, this script won't be needed, because we'll just pass in a list of the moves made.
+ */
 const boardWidth = 30;
 const boardHeight = 20;
 

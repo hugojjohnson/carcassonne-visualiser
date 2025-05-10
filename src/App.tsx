@@ -10,7 +10,7 @@ import { NoPage } from "./components/NoPage";
 
 function App(): React.ReactElement {
   return (
-      <BrowserRouter basename="nice">
+      <BrowserRouter basename="carcassonne-visualiser">
         <Routes>
           <Route path="/">
             <Route index element={<Dashboard />} />

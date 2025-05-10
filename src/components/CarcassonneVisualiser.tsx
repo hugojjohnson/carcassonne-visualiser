@@ -1,4 +1,3 @@
-// CarcassonneVisualizer.tsx
 import React, { useState } from 'react';
 import { Stage, Layer, Image as KonvaImage } from 'react-konva';
 import useImage from 'use-image';
@@ -31,6 +30,15 @@ const Tile: React.FC<{ imgSrc: string; x: number; y: number; tileSize: number }>
   );
 };
 
+
+/**
+ * Carcassonne Visualizer
+ * Renders a sequence of tile placements on a virtual board using Konva.
+ * Allows stepping forward and backward through game moves.
+ *
+ * @requires konva
+ * @requires react-konva
+ */
 
 export const CarcassonneVisualizer: React.FC<Props> = ({ moves, boardWidth, boardHeight }) => {
   const [step, setStep] = useState<number>(0);

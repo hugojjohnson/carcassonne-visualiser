@@ -4,6 +4,9 @@ enum D {
     Road
 }
 
+/**
+ * Info about each tile in public/tiles/. Used for generation logic to make sure the map syncs up nicely.
+ */
 export const TileInfo: { [key: string]: D[] } = {
     "1.png": [D.Castle, D.Field, D.Field, D.Field],
     "2.png": [D.Castle, D.Field, D.Castle, D.Field],
