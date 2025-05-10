@@ -60,7 +60,7 @@ export const CarcassonneVisualizer: React.FC<Props> = ({ moves, boardWidth, boar
           {moves.slice(0, step).map((move, _) => (
             <Tile
               key={`${move.x}-${move.y}-${move.img_name}`}
-              imgSrc={`/tiles/${move.img_name}`}
+              imgSrc={`./tiles/${move.img_name}`}
               x={move.x + boardWidth/2}
               y={move.y + boardHeight/2}
               tileSize={tileSize}
